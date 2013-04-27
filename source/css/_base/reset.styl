@@ -1,0 +1,118 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
+  margin 0
+  padding 0
+  font-size 100%
+  font-weight inherit
+  font-style normal
+  vertical-align baseline
+  background transparent
+  border 0
+  outline 0
+
+
+article, aside, figure, figure img, hgroup, footer, header, nav, section
+  display block
+
+blockquote,
+q
+  quotes none
+
+blockquote:before, 
+blockquote:after,
+q:before,
+q:after
+  content ''
+  content none
+
+table
+  border-collapse collapse
+  border-spacing 0
+
+input,
+select
+  vertical-align: middle
+
+
+a img
+  border 0
+
+:focus
+  outline 0
+
+a:hover,
+a:active
+  outline none
+
+body
+  background color-background
+  color color-font
+  font-family font-default
+  font-size 100%
+  text-rendering optimizeLegibility
+  -webkit-text-size-adjust 100%
+
+img::selection 
+  background transparent
+
+img::-moz-selection
+  background transparent
+
+body
+  -webkit-tap-highlight-color rgba(0, 0, 0, 0.1)
+
+.alignleft
+  float left
+
+.alignright
+  float right
+
+.clearfix
+  clearfix()
+  
+  &:after 
+    clear both
+
+.hide 
+  display none
+  visibility hidden
+
+/* LINKS
+----------------------------------------------- */
+a 
+  text-decoration none
+  color rgba(0, 0, 0, 0.95)
+  transition all 0.2s ease-in-out
+  &:hover, &:focus
+    color rgba(0, 0, 0, 0.5)
+    img
+      opacity .85
+  img
+    transition all 0.2s ease-in-out
+
+/* custom selection colors */
+::-webkit-scrollbar-track-piece {
+    background-color:#f5f5f5;
+    border-left:1px solid #d2d2d2;
+}
+::-webkit-scrollbar {
+    width:13px;
+    height:13px;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#DFDFDF;
+    background-clip:padding-box;
+    border:1px solid #C7C7C7;
+    min-height:28px;
+}
+::-webkit-scrollbar-thumb:hover {
+    border:1px solid #636363;
+    background-color:#929292;
+}

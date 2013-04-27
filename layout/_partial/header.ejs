@@ -1,0 +1,22 @@
+<div id="branding" class="branding">
+  <a href="<%- config.root %>">
+    <img class="circle" src="<%- config.root %>img/koala.jpg" alt="Anthem">
+  </a>
+  <h1 id="site-title" class="title">
+    <a href="<%- config.root %>"><%= config.title %></a>
+  </h1>
+</div>
+<a href="#" id="toggle">信息</a>
+<div class="about" style="display: none">
+  <p><% if (config.subtitle){ %><%= config.subtitle %><% } %></p>
+</div>
+<nav class="menu-navigation-container">
+  <ul>
+    <% for (var i in theme.menu){ %>
+      <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+    <% } %>
+  </ul>
+</nav>
+<div class="widget">
+  <%- partial('sidebar') %>
+</div>

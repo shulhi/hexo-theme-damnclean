@@ -1,0 +1,72 @@
+// optimization done
+
+/* Formalize (github.com/nathansmith/formalize) 
+----------------------------------------------- */
+/* UI Consistency */
+::-moz-focus-inner
+  border 0
+  padding 0
+
+input[type="search"]::-webkit-search-decoration
+  display none
+
+input
+  margin 0
+  vertical-align middle
+  &.placeholder_text
+    color #888
+  &:focus, &:active
+    box-shadow #A2A2A2 0 0 7px
+    /* for Opera */
+    z-index 1
+
+
+input[type="search"],
+input[type="text"]
+  -webkit-appearance none
+  border-radius 0
+  box-sizing border-box
+  background-clip padding
+  background-clip padding-box
+  background-color #fff
+  border 1px solid
+  border-color #848484 #c1c1c1 #e1e1e1
+  color #000
+  outline 0
+  padding 2px 3px
+  font-size 13px
+  /*
+    Leaving out Helvetica Neue, to not throw off size="..."
+    on inputs. Arial is more reliable, on Windows and OS X.
+  */
+  font-family Arial, 'Liberation Sans', FreeSans, sans-serif
+  height 1.8em
+  /* IE7 */
+  *padding-top 2px
+  *padding-bottom 1px
+  *height auto
+
+/*
+  Separate rule for Firefox.
+  Separate rule for IE, too.
+  Cannot stack with WebKit's.
+*/
+::-webkit-input-placeholder
+  color #888
+
+input-moz-placeholder 
+  color #888
+
+
+:invalid
+  /*
+    Suppress red glow that Firefox
+    adds to form fields by default,
+    even when user is still typing.
+  */
+  box-shadow none
+
+
+
+
+

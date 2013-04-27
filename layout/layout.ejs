@@ -1,0 +1,13 @@
+<%- partial('_partial/head') %>
+
+<body>
+  <div id="container" class="container">
+    <header id="sidebar" role="banner" class="sidebar"><%- partial('_partial/header') %></header>
+    <section id="content" class="blog">
+      <%- body %>
+    </section>
+    <footer id="footer" class="clearfix footer"><%- partial('_partial/footer') %></footer>
+  </div>
+  <%- partial('_partial/after_footer') %>
+</body>
+</html>

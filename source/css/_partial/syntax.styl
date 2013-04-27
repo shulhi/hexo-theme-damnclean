@@ -1,0 +1,325 @@
+article .gist table
+  margin-top 0 !important
+.entry
+  .gist
+    background-color #EEE !important
+    margin-top 15px !important
+    margin-bottom 12px !important
+    padding 3px !important
+    border-radius 3px !important
+    overflow auto !important
+    .gist-file
+      background-color #fff !important
+      border 1px solid #CCC !important
+      position relative !important
+      margin-bottom 0 !important
+      .gist-data
+        background none !important
+        border-bottom none !important
+        pre
+          padding 0 !important
+          font-family font-mono !important
+        .line-data
+          padding 12px !important
+          padding-right 0 !important
+          width 100% !important
+        .line-pre
+          overflow visible !important
+
+      .gist-meta
+        background none !important
+        color color-meta !important
+        padding 3px 10px !important
+        text-shadow 0 0 1px #fff !important
+        font-size 12px !important
+        a
+          color color-link !important
+          &:visited
+            color color-link !important
+
+      .line-data .gd
+      .line-data .gi
+      .line-data .gu
+        display block
+        margin-left -12px
+        padding-left 12px
+
+      .line-data .gu 
+        color #999
+        font-weight normal
+
+    .gist-file:first-child
+      border-bottom none
+
+    .gist-file:only-child
+      border-bottom 1px solid #CCC
+
+    .gist-file .gist-data .line-numbers
+      background-color: #f8f8f8
+      
+figure.highlight
+  width 100% !important
+  background #eee !important
+  margin-top 15px !important
+  padding 3px !important
+  border-radius 3px !important
+  overflow auto !important
+  position relative !important
+  font-size 12px !important
+  color #fff !important
+
+  figcaption
+    color #7E7E7E !important
+    padding 5px !important
+    border-top 1px solid #DDD !important
+    border-left 1px solid #DDD !important
+    border-right 1px solid #DDD !important
+    background-color #F8F8F8 !important
+    background-image linear-gradient(#ffffff, #F8F8F8) !important
+    a
+      position absolute !important
+      right 15px !important
+
+  pre
+    border none !important
+    padding 0 !important
+    margin 0 !important
+    background none !important
+
+  table
+    margin-top 0 !important
+    border-spacing 0 !important
+    background-color #fff !important
+    border-top 1px solid #EEE !important
+    border-bottom 1px solid #DDD !important
+    border-left 1px solid #DDD !important
+    border-right 1px solid #DDD !important
+
+  .gutter
+    background-color #f8f8f8 !important
+    color color-meta !important
+    padding 0 .5em !important
+    border-right 1px solid color-border !important
+    text-align center !important
+
+  .code
+    padding 12px !important
+    padding-right 0 !important
+    width 100% !important
+    background #272822 !important
+
+pre
+  // Theme: Monokai - ported by Luigi Maselli - http://grigio.org
+  // More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html
+  code
+    display block !important
+    padding 0.5em !important
+    background #272822 !important
+    color #DDD !important
+    .constant
+      color #66D9EF !important
+
+  .tag
+  .tag .title
+  .keyword
+  .method
+  .literal
+  .change
+  .winutils
+  .flow
+  .lisp .title
+  .clojure .built_in
+  .nginx .title
+  .tex .special 
+    color #F92672 !important
+
+  .class .title
+    color white !important
+
+  .number
+  .attribute
+  .symbol
+  .symbol .string
+  .value
+  .regexp
+    color #BF79DB !important
+
+  .tag .value
+  .string
+  .subst
+  .title
+  .haskell .type
+  .preprocessor
+  .ruby .class .parent
+  .built_in
+  .sql .aggregate
+  .django .template_tag
+  .django .variable
+  .smalltalk .class
+  .javadoc
+  .django .filter .argument
+  .smalltalk .localvars
+  .smalltalk .array
+  .attr_selector
+  .pseudo
+  .addition
+  .stream
+  .envvar
+  .apache .tag
+  .apache .cbracket
+  .tex .command
+  .prompt
+    color #A6E22E !important
+
+  .comment
+  .java .annotation
+  .python .decorator
+  .template_comment
+  .pi
+  .doctype
+  .deletion
+  .shebang
+  .apache .sqbracket
+  .tex .formula
+    color #75715E !important
+
+  .coffeescript .javascript
+  .javascript .xml
+  .tex .formula
+  .xml .javascript
+  .xml .vbscript
+  .xml .css
+  .xml .cdata 
+    opacity 0.5 !important
+
+gistlight()
+  background #272822 !important
+  font-size 10pt !important
+  line-height 21px !important
+
+.gist 
+  .gist-file 
+    font-family font-mono !important
+    font-size 10pt !important
+
+  .highlight
+    gistlight()
+    color #f8f8f2 !important
+    pre
+      gistlight()
+      border-radius 0 !important
+
+    .err
+    .n
+    .nb
+    .ni
+    .nl
+    .nn
+    .nx
+    .py
+    .nv
+    .bp
+    .vc
+    .vg
+    .vi
+    .p
+    .w
+      color #f8f8f2 !important
+
+    span[class]
+      font-weight normal !important
+      font-style normal !important   
+
+    .c
+    .cm
+    .cp
+    .c1
+    .cs
+    .diff-line
+      color #75715e !important
+
+    .err
+      background #f82167 !important
+
+    .k
+    .kn
+    .nt
+    .o
+    .ow
+    .gd
+      color #f92672 !important
+
+    .kc
+    .kd
+    .kp
+    .kr
+    .kt
+    .no
+      color #66d9ef !important
+
+    .na
+    .nc
+    .nd
+    .ne
+    .nf
+    .gi
+      color #a6e22e !important
+  
+    .ge
+      font-style italic !important
+
+    .gs
+      font-weight bold !important
+
+    .l
+    .m
+    .mf
+    .mo
+    .mh
+    .mi
+    .il
+    .se
+      color #ae81ff !important
+  
+    .ld
+    .s
+    .sb
+    .sc
+    .sd
+    .s1
+    .s2
+    .sh
+    .si
+    .sx
+    .sr
+    .ss
+      color #e6db74 !important
+
+
+    .diff-line
+    .gd
+    .gi
+      background rgba(65, 65, 63, 0.69) !important
+
+    .gd .x
+      background #f92672 !important
+
+    .gd .x
+    .gi .x
+      padding 1px !important
+      color #23241f !important
+
+    .gi .x
+      background #a6e22e !important 
+
+    .w
+    .gc
+      color #f8f8f2 !important
+
+    .gc
+    .gc .line
+      background #75715e !important
+
+    .line[style*="background-color: rgb(255, 255, 204)"]
+    .diff-table tr:hover .line
+      background #3b392f !important

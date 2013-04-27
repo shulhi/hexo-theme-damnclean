@@ -1,0 +1,48 @@
+<article class="<%= item.layout %>">
+  <header>
+    <%- partial('post/title') %>
+    <% if (item.photos){ %>
+      <%- partial('post/gallery') %>
+    <% } %>
+  </header>
+  <section class="entry">
+    <% if (item.excerpt && index){ %>
+      <%- item.excerpt %>
+    <% } else { %>
+      <%- item.content %>
+    <% } %>
+  </section>
+  <footer>
+    
+    <div class="clearfix"></div>
+    <% if (index){ %>
+      <div class="alignleft widget">
+        <% if (item.comment && config.disqus_shortname){ %>
+          <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
+        <% } %>
+        <% if (item.layout != 'page'){ %>
+          <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+        <% } %>
+        <%- partial('post/category') %>
+        <%- partial('post/tag') %>
+      </div>
+      <% if (item.excerpt){ %>
+        <div class="alignright">
+          <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= __('more_link') %></a>
+        </div>
+      <% } %>
+    <% } else { %>
+      <div class="widget">
+        <% if (item.layout != 'page'){ %>
+          <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
+        <% } %>
+        <%- partial('post/category') %>
+        <%- partial('post/tag') %>
+        <%- partial('post/share') %>
+      </div>
+    <% } %>
+    <div class="clearfix"></div>
+  </footer>
+</article>
+
+<%- partial('comment') %>

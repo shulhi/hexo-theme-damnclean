@@ -1,0 +1,10 @@
+<% if (site.categories.length){ %>
+<nav class="categories">
+  <h3 class="title"><%= __('categories') %></h3>
+  <ul>
+  <% site.categories.sort('name').each(function(item){ %>
+    <li><a href="<%- config.root %><%- item.path %>"><%= item.name %></a>&nbsp;<small>(<%= item.posts.length %>)</small></li>
+  <% }); %>
+  </ul>
+</nav>
+<% } %>
