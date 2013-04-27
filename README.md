@@ -1,25 +1,31 @@
 # DamnClean
 
-Default theme for [Hexo].
+This is one damn clean minimalist theme for [Hexo](http://zespia.tw/hexo). Based on Hexo default theme, Light.
+
+Demo is [here](http://shulhi.github.io)
+
+**Note** : This is still in beta, so far it works fine for me. But I haven't fully test it yet with Gallery, or add in picture in post etc. I only tested simple text entry, and code as that is mainly what I need.
 
 ## Install
 
-Execute the following command and modify `theme` in `_config.yml` to `light`.
+Execute the following command and modify `theme` in `_config.yml` to `damnclean`.
 
 ```
-git clone git://github.com/tommy351/hexo-theme-light.git themes/light
+git clone https://github.com/shulhi/hexo-theme-damnclean.git
 ```
 
 ## Update
 
-Execute the following command to update Light.
+Execute the following command to update DamnClean.
 
 ```
-cd themes/light
+cd themes/damnclean
 git pull
 ```
 
 ## Config
+
+Please note some of this config is not supported like the Read More
 
 Default config:
 
@@ -72,43 +78,3 @@ rss:
 - **fancybox** - Enable [Fancybox]
 - **google_analytics** - Google Analytics ID
 - **rss** - RSS subscription link (change if using Feedburner)
-
-## Features
-
-### Gallery Post
-
-![](http://i.minus.com/ibp6Hbytwgof9y.jpg)
-
-```
----
-layout: photo
-title: Gallery Post
-photos:
-- http://i.minus.com/ibobbTlfxZgITW.jpg
-- http://i.minus.com/iedpg90Y0exFS.jpg
----
-```
-
-### Link Post
-
-![](http://i.minus.com/i7hBbGqh14EWo.png)
-
-```
----
-layout: link
-title: Link Post
-link: http://www.google.com/
----
-```
-
-### Tweet Widget
-
-![](http://i.minus.com/iMC8EyF9y0Y3y.PNG)
-
-### Fancybox
-
-![](http://i.minus.com/iHv7h7rZNqHvo.PNG)
-
-[Hexo]: http://zespia.tw/hexo/
-[AddThis]: https://www.addthis.com
-[Fancybox]: http://fancyapps.com/fancybox/
