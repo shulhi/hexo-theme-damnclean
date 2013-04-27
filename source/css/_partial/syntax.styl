@@ -1,325 +1,144 @@
-article .gist table
-  margin-top 0 !important
 .entry
   .gist
-    background-color #EEE !important
-    margin-top 15px !important
-    margin-bottom 12px !important
-    padding 3px !important
-    border-radius 3px !important
-    overflow auto !important
+    background #eee
+    border 1px solid color-border
+    margin-top 15px
+    padding 7px 15px
+    border-radius 2px
+    text-shadow 0 0 1px #fff
+    line-height 1.6
+    overflow auto
+    color #666
     .gist-file
-      background-color #fff !important
-      border 1px solid #CCC !important
-      position relative !important
-      margin-bottom 0 !important
+      border none
+      font-family inherit
+      margin 0
+      font-size 0.9em
       .gist-data
-        background none !important
-        border-bottom none !important
+        background none
+        border-bottom none
         pre
           padding 0 !important
-          font-family font-mono !important
-        .line-data
-          padding 12px !important
-          padding-right 0 !important
-          width 100% !important
-        .line-pre
-          overflow visible !important
+          font-family font-mono
 
       .gist-meta
-        background none !important
-        color color-meta !important
-        padding 3px 10px !important
-        text-shadow 0 0 1px #fff !important
-        font-size 12px !important
+        background none
+        color color-meta
+        margin-top 5px
+        padding 0
+        text-shadow 0 0 1px #fff
+        font-size 100%
         a
-          color color-link !important
+          color color-link
           &:visited
-            color color-link !important
+            color color-link
 
-      .line-data .gd
-      .line-data .gi
-      .line-data .gu
-        display block
-        margin-left -12px
-        padding-left 12px
-
-      .line-data .gu 
-        color #999
-        font-weight normal
-
-    .gist-file:first-child
-      border-bottom none
-
-    .gist-file:only-child
-      border-bottom 1px solid #CCC
-
-    .gist-file .gist-data .line-numbers
-      background-color: #f8f8f8
-      
 figure.highlight
-  width 100% !important
-  background #eee !important
-  margin-top 15px !important
-  padding 3px !important
-  border-radius 3px !important
-  overflow auto !important
-  position relative !important
-  font-size 12px !important
-  color #fff !important
-
+  background #eee
+  border 1px solid color-border
+  margin-top 15px
+  padding 7px 15px
+  border-radius 2px
+  text-shadow 0 0 1px #fff
+  line-height 1.6
+  overflow auto
+  position relative
+  font-size 0.9em
   figcaption
-    color #7E7E7E !important
-    padding 5px !important
-    border-top 1px solid #DDD !important
-    border-left 1px solid #DDD !important
-    border-right 1px solid #DDD !important
-    background-color #F8F8F8 !important
-    background-image linear-gradient(#ffffff, #F8F8F8) !important
+    color color-meta
+    margin-bottom 5px
+    text-shadow 0 0 1px #fff
     a
-      position absolute !important
-      right 15px !important
+      position absolute
+      right 15px
 
   pre
-    border none !important
-    padding 0 !important
-    margin 0 !important
-    background none !important
+    border none
+    padding 0
+    margin 0
 
   table
-    margin-top 0 !important
-    border-spacing 0 !important
-    background-color #fff !important
-    border-top 1px solid #EEE !important
-    border-bottom 1px solid #DDD !important
-    border-left 1px solid #DDD !important
-    border-right 1px solid #DDD !important
+    margin-top 0
+    border-spacing 0
 
   .gutter
-    background-color #f8f8f8 !important
-    color color-meta !important
-    padding 0 .5em !important
-    border-right 1px solid color-border !important
-    text-align center !important
+    color color-meta
+    padding-right 15px
+    border-right 1px solid color-border
+    text-align right
 
   .code
-    padding 12px !important
-    padding-right 0 !important
-    width 100% !important
-    background #272822 !important
+    padding-left 15px
+    border-left 1px solid #fff
+    color #666
 
 pre
-  // Theme: Monokai - ported by Luigi Maselli - http://grigio.org
+  // Theme: Solarized - Light
   // More theme here: http://softwaremaniacs.org/media/soft/highlight/test.html
-  code
-    display block !important
-    padding 0.5em !important
-    background #272822 !important
-    color #DDD !important
-    .constant
-      color #66D9EF !important
+  .comment
+  .template_comment
+  .diff .header
+  .doctype
+  .pi
+  .lisp .string
+  .javadoc
+    color #93a1a1
+    font-style italic
 
-  .tag
-  .tag .title
   .keyword
-  .method
-  .literal
-  .change
   .winutils
-  .flow
-  .lisp .title
-  .clojure .built_in
+  .method
+  .addition
+  .css .tag
+  .request
+  .status
   .nginx .title
-  .tex .special 
-    color #F92672 !important
-
-  .class .title
-    color white !important
+    color #859900
 
   .number
+  .command
+  .string
+  .tag .value
+  .phpdoc
+  .tex .formula
+  .regexp
+  .hexcolor
+    color #2aa198
+
+  .title
+  .localvars
+  .chunk
+  .decorator
+  .built_in
+  .identifier
+  .vhdl
+  .literal
+  .id
+    color #268bd2
+
   .attribute
+  .variable
+  .lisp .body
+  .smalltalk .number
+  .constant
+  .class .title
+  .parent
+  .haskell .type
+    color #b58900
+
+  .preprocessor
+  .preprocessor .keyword
+  .shebang
   .symbol
   .symbol .string
-  .value
-  .regexp
-    color #BF79DB !important
-
-  .tag .value
-  .string
-  .subst
-  .title
-  .haskell .type
-  .preprocessor
-  .ruby .class .parent
-  .built_in
-  .sql .aggregate
-  .django .template_tag
-  .django .variable
-  .smalltalk .class
-  .javadoc
-  .django .filter .argument
-  .smalltalk .localvars
-  .smalltalk .array
+  .diff .change
+  .special
   .attr_selector
-  .pseudo
-  .addition
-  .stream
-  .envvar
-  .apache .tag
-  .apache .cbracket
-  .tex .command
-  .prompt
-    color #A6E22E !important
+  .important
+  .subst
+  .cdata
+  .clojure .title
+    color #cb4b16
 
-  .comment
-  .java .annotation
-  .python .decorator
-  .template_comment
-  .pi
-  .doctype
   .deletion
-  .shebang
-  .apache .sqbracket
-  .tex .formula
-    color #75715E !important
-
-  .coffeescript .javascript
-  .javascript .xml
-  .tex .formula
-  .xml .javascript
-  .xml .vbscript
-  .xml .css
-  .xml .cdata 
-    opacity 0.5 !important
-
-gistlight()
-  background #272822 !important
-  font-size 10pt !important
-  line-height 21px !important
-
-.gist 
-  .gist-file 
-    font-family font-mono !important
-    font-size 10pt !important
-
-  .highlight
-    gistlight()
-    color #f8f8f2 !important
-    pre
-      gistlight()
-      border-radius 0 !important
-
-    .err
-    .n
-    .nb
-    .ni
-    .nl
-    .nn
-    .nx
-    .py
-    .nv
-    .bp
-    .vc
-    .vg
-    .vi
-    .p
-    .w
-      color #f8f8f2 !important
-
-    span[class]
-      font-weight normal !important
-      font-style normal !important   
-
-    .c
-    .cm
-    .cp
-    .c1
-    .cs
-    .diff-line
-      color #75715e !important
-
-    .err
-      background #f82167 !important
-
-    .k
-    .kn
-    .nt
-    .o
-    .ow
-    .gd
-      color #f92672 !important
-
-    .kc
-    .kd
-    .kp
-    .kr
-    .kt
-    .no
-      color #66d9ef !important
-
-    .na
-    .nc
-    .nd
-    .ne
-    .nf
-    .gi
-      color #a6e22e !important
-  
-    .ge
-      font-style italic !important
-
-    .gs
-      font-weight bold !important
-
-    .l
-    .m
-    .mf
-    .mo
-    .mh
-    .mi
-    .il
-    .se
-      color #ae81ff !important
-  
-    .ld
-    .s
-    .sb
-    .sc
-    .sd
-    .s1
-    .s2
-    .sh
-    .si
-    .sx
-    .sr
-    .ss
-      color #e6db74 !important
-
-
-    .diff-line
-    .gd
-    .gi
-      background rgba(65, 65, 63, 0.69) !important
-
-    .gd .x
-      background #f92672 !important
-
-    .gd .x
-    .gi .x
-      padding 1px !important
-      color #23241f !important
-
-    .gi .x
-      background #a6e22e !important 
-
-    .w
-    .gc
-      color #f8f8f2 !important
-
-    .gc
-    .gc .line
-      background #75715e !important
-
-    .line[style*="background-color: rgb(255, 255, 204)"]
-    .diff-table tr:hover .line
-      background #3b392f !important
+    color #dc322f

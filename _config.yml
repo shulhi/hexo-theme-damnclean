@@ -6,7 +6,9 @@ widgets:
 - search
 - category
 - tag
-- other
+- twitter
+
+excerpt_link: Read More
 
 twitter:
   username:
@@ -14,7 +16,7 @@ twitter:
   tweet_count: 5
 
 addthis:
-  enable: false
+  enable: true
   pubid:
   facebook: true
   twitter: true
