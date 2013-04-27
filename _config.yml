@@ -8,10 +8,10 @@ widgets:
 - tag
 - twitter
 
-excerpt_link: Read More
+excerpt_link:
 
 twitter:
-  username:
+  username: shulhisapli
   show_replies: false
   tweet_count: 5
 

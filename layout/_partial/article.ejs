@@ -4,10 +4,12 @@
   <% } %>
   <div class="post-content">
     <header>
-      <% if (item.layout != 'page'){ %>
-        <time datetime="<%= item.date.toDate().toISOString() %>"><a href="<%- config.root %><%- item.path %>"><%= item.date.format(config.date_format) %></a></time>
-      <% } %>
       <%- partial('post/title') %>
+      <% if (item.layout != 'page'){ %>
+        <p class="published">
+          Published: <time datetime="<%= item.date.toDate().toISOString() %>"><%= item.date.format(config.date_format) %></time>
+        </p>
+      <% } %>
     </header>
     <div class="entry">
       <% if (item.excerpt && index){ %>
@@ -18,6 +20,11 @@
     </div>
     <footer>
       <% if (index){ %>
+       <!-- <% if (item.excerpt){ %>
+          <div class="alignleft">
+            <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
+          </div>
+        <% } %> -->
         <% if (item.comment && config.disqus_shortname){ %>
         <div class="alignright">
           <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>

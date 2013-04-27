@@ -2,7 +2,6 @@ icon-size = 0px
 icon-gap = 0px
 
 article
-  box-shadow 1px 2px 3px #ddd
   background #fff
   &.page
     padding-left 20px
@@ -34,7 +33,6 @@ article
           vertical-align super
 
   .post-content
-    padding 20px 20px 15px (icon-size + icon-gap + 20)
     position relative
     @media screen and (max-width: 600px)
       padding-left 20px
@@ -106,20 +104,27 @@ article
         width 32px
         text-align center
 
+    .published
+      color #ccc
+      font-size 10pt
+
     time
-      color color-meta
+      color #888
       font 0.9em font-title
       margin-bottom 5px
-      display block
+      display inline
       line-height 1
+      text-decoration none
 
     .title
-      font-weight normal
+      font-weight bold
+      margin-bottom 5px
+      text-decoration underline
       a
         color color-font
         &:hover
           color color-link
-          text-decoration none
+          text-decoration underline
 
   .entry
     text-align justify
@@ -234,9 +239,8 @@ article
       font-size 1.5em
 
   footer
-    margin-top 15px
-    padding-top 10px
-    border-top 1px solid color-border
+    margin-top 0px
+    padding-top 0px
     color color-meta
     font-size 0.9em
     line-height 16px
