@@ -7,7 +7,7 @@ if (page.archive){
   else title = __('archive_a');
 }
 %>
-<h2 class="archive-title"><% if (page.tag){ %><%= __('tags')%>: <% } else if (page.category){ %><%= __('categories')%>: <% } %><%= title %></h2>
+<h2 class="archive-title<% if (page.tag){ %> tag<% } else if (page.category){ %> category<% } %>"><%= title %></h2>
 
 <% if (pagination == 2){ %>
   <% page.posts.each(function(item){ %>

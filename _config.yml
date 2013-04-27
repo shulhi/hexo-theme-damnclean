@@ -6,15 +6,17 @@ widgets:
 - search
 - category
 - tag
-- other
+- twitter
+
+excerpt_link:
 
 twitter:
-  username:
+  username: shulhisapli
   show_replies: false
   tweet_count: 5
 
 addthis:
-  enable: false
+  enable: true
   pubid:
   facebook: true
   twitter: true
