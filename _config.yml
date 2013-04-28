@@ -9,13 +9,11 @@ widgets:
 - tag
 - twitter
 
-excerpt_link: Read More
-
 github:
-  username: shulhi 
+  username:  
 
 twitter:
-  username: shulhisapli
+  username: 
   show_replies: false
   tweet_count: 5
 
