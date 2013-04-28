@@ -12,6 +12,12 @@
 </nav>
 <div class="clearfix"></div>
 <div class="alignleft" style="margin-top: 15px">
-  <a href="https://twitter.com/shulhisapli" class="twitter-follow-button" data-show-count="false">Follow @shulhisapli</a>
+<% if(theme.twitter.username){ %>
+  <a href="https://twitter.com/<%- theme.twitter.username %>" class="twitter-follow-button" data-show-count="false">Follow @<%= theme.twitter.username %></a>
+<% } %>
+<% if(theme.github.username){ %>
+  <iframe src="http://ghbtns.com/github-btn.html?user=<%- theme.github.username %>&type=follow"
+  allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+<% } %>
 </div>
 <div class="clearfix"></div>
