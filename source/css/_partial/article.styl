@@ -33,8 +33,6 @@ article
 
   .post-content
     position relative
-    @media screen and (max-width: 600px)
-      padding-left 20px
 
   .gallery
     overflow hidden
@@ -153,6 +151,8 @@ article
 
     code, pre
       font-family font-mono
+      @media screen and (max-width: 600px)
+        word-break break-word
 
     code
       background #eee
