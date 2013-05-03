@@ -25,8 +25,6 @@ git pull
 
 ## Config
 
-Please note some of this config is not supported like the Read More
-
 Default config:
 
 ``` yaml
@@ -39,6 +37,8 @@ widgets:
 - category
 - tag
 - twitter
+
+excerpt_link: Read more
 
 github:
   username: 
@@ -64,6 +64,7 @@ rss:
 
 - **menu** - Main navigation menu
 - **widget** - Widgets displaying in sidebar
+- **excerpt_link** - Display read more link at bottom of post (leave empty to disable)
 - **github** - Github follow button
   - **username** - Github username
 - **twitter** - Twitter follow button
