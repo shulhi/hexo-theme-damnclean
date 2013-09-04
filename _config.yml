@@ -30,4 +30,6 @@ addthis:
 fancybox: true
 
 google_analytics:
+domain:
+
 rss:
