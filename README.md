@@ -6,6 +6,10 @@ Demo is [here](http://shulhi.github.io)
 
 **Note** : This is still in beta, so far it works fine for me. But I haven't fully test it yet with Gallery, or add in picture in post etc. I only tested simple text entry, and code as that is mainly what I need. Feel free to fork and change to your need.
 
+## Update
+
+I am no longer updating this theme as I have moved my blog to Ghost platform.
+
 ## Install
 
 Execute the following command and modify `theme` in `_config.yml` to `damnclean`.
