@@ -12,13 +12,16 @@ I am no longer updating this theme as I have moved my blog to Ghost platform.
 
 ## Install
 
-Execute the following command and modify `theme` in `_config.yml` to `damnclean`.
+Execute the following command in the root directory 
 
 ```
-git clone https://github.com/shulhi/hexo-theme-damnclean.git
+git clone https://github.com/shulhi/hexo-theme-damnclean.git theme/damnclean
 ```
 
-## Update
+Then modify `theme` in `_config.yml` to `damnclean`.
+
+
+## Update 
 
 Execute the following command to update DamnClean.
 
